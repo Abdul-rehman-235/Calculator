@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesom link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="container text-center">
+        <div class="bg-white mx-auto py-4 mt-5 rounded width-20">
+            <input type="text" id="result">
+            <div class="d-flex justify-content-center">
+                <button onclick="ClearFunction()">AC</button>
+                <button onclick="ValueFunction('%')">%</button>
+                <button onclick="ValueFunction('%')">/</button>
+                <button onclick="ValueFunction('.')">.</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button onclick="ValueFunction('7')">7</button>
+                <button onclick="ValueFunction('8')">8</button>
+                <button onclick="ValueFunction('9')">9</button>
+                <button onclick="ValueFunction('*')">*</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button onclick="ValueFunction('4')">4</button>
+                <button onclick="ValueFunction('5')">5</button>
+                <button onclick="ValueFunction('6')">6</button>
+                <button onclick="ValueFunction('-')">-</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button onclick="ValueFunction('1')">1</button>
+                <button onclick="ValueFunction('2')">2</button>
+                <button onclick="ValueFunction('3')">3</button>
+                <button onclick="ValueFunction('+')">+</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button onclick="ValueFunction('0')">0</button>
+                <button onclick="ValueFunction('00')">00</button>
+                <button class="equal" onclick="TotalFunction()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
